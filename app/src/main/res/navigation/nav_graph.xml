@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/searchCharacterFragment">
 
     <fragment
         android:id="@+id/detailsCharacterFragment"
         android:name="hugo.lop.io.marvelappstarter.ui.details.DetailsCharacterFragment"
-        android:label="DetailsCharacterFragment" />
+        android:label="DetailsCharacterFragment"
+        tools:layout="@layout/fragment_details_character" />
     <fragment
         android:id="@+id/favoriteCharacterFragment"
         android:name="hugo.lop.io.marvelappstarter.ui.favorite.FavoriteCharacterFragment"
-        android:label="FavoriteCharacterFragment" >
+        android:label="FavoriteCharacterFragment"
+        tools:layout="@layout/fragment_favorite_character">
         <action
             android:id="@+id/action_favoriteCharacterFragment2_to_detailsCharacterFragment2"
             app:destination="@id/detailsCharacterFragment" />
@@ -19,9 +22,10 @@
     <fragment
         android:id="@+id/listCharacterFragment"
         android:name="hugo.lop.io.marvelappstarter.ui.list.ListCharacterFragment"
-        android:label="ListCharacterFragment" >
+        android:label="ListCharacterFragment"
+        tools:layout="@layout/fragment_list_character">
         <action
-            android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment2"
+            android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
         <argument
             android:name="characterid"
@@ -30,7 +34,8 @@
     <fragment
         android:id="@+id/searchCharacterFragment"
         android:name="hugo.lop.io.marvelappstarter.ui.search.SearchCharacterFragment"
-        android:label="SearchCharacterFragment" >
+        android:label="SearchCharacterFragment"
+        tools:layout="@layout/fragment_search_character">
         <action
             android:id="@+id/action_searchCharacterFragment_to_detailsCharacterFragment2"
             app:destination="@id/detailsCharacterFragment" />
