@@ -2,7 +2,7 @@ package hugo.lop.io.marvelappstarter.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Thumbnail(
+data class ThumbnailModel(
 
     @SerializedName("path_url")
     val path: String,

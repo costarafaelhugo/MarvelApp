@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/nav_graph"
+    app:startDestination="@id/searchCharacterFragment">
+
+    <fragment
+        android:id="@+id/detailsCharacterFragment"
+        android:name="hugo.lop.io.marvelappstarter.ui.details.DetailsCharacterFragment"
+        android:label="DetailsCharacterFragment" />
+    <fragment
+        android:id="@+id/favoriteCharacterFragment"
+        android:name="hugo.lop.io.marvelappstarter.ui.favorite.FavoriteCharacterFragment"
+        android:label="FavoriteCharacterFragment" >
+        <action
+            android:id="@+id/action_favoriteCharacterFragment2_to_detailsCharacterFragment2"
+            app:destination="@id/detailsCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCharacterFragment"
+        android:name="hugo.lop.io.marvelappstarter.ui.list.ListCharacterFragment"
+        android:label="ListCharacterFragment" >
+        <action
+            android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment2"
+            app:destination="@id/detailsCharacterFragment" />
+        <argument
+            android:name="characterid"
+            app:argType="hugo.lop.io.marvelappstarter.data.model.character.CharacterModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCharacterFragment"
+        android:name="hugo.lop.io.marvelappstarter.ui.search.SearchCharacterFragment"
+        android:label="SearchCharacterFragment" >
+        <action
+            android:id="@+id/action_searchCharacterFragment_to_detailsCharacterFragment2"
+            app:destination="@id/detailsCharacterFragment" />
+    </fragment>
+</navigation>

@@ -1,4 +1,6 @@
 package hugo.lop.io.marvelappstarter.ui.details
 
-class DetailsCharacterViewModel {
+import androidx.lifecycle.ViewModel
+
+class DetailsCharacterViewModel : ViewModel(){
 }

@@ -1,4 +1,6 @@
 package hugo.lop.io.marvelappstarter.ui.search
 
-class SearchCharacterViewModel {
+import androidx.lifecycle.ViewModel
+
+class SearchCharacterViewModel : ViewModel(){
 }

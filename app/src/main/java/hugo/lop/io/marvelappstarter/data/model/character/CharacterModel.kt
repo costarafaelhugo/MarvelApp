@@ -1,4 +1,16 @@
 package hugo.lop.io.marvelappstarter.data.model.character
 
-class CharacterModel {
-}
+import com.google.gson.annotations.SerializedName
+import hugo.lop.io.marvelappstarter.data.model.ThumbnailModel
+import java.io.Serializable
+
+data class CharacterModel(
+    @SerializedName("id")
+    val id: Int,
+    @SerializedName("name")
+    val name: String,
+    @SerializedName("description")
+    val description: String,
+    @SerializedName("thumbnail")
+    val thumbnailModel: ThumbnailModel
+) : Serializable

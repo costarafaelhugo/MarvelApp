@@ -1,4 +1,6 @@
 package hugo.lop.io.marvelappstarter.ui.list
 
-class ListCharacterViewModel {
+import androidx.lifecycle.ViewModel
+
+class ListCharacterViewModel : ViewModel() {
 }

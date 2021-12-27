@@ -1,4 +1,7 @@
 package hugo.lop.io.marvelappstarter.ui.favorite
 
-class FavoriteCharacterViewMOdel {
+import androidx.lifecycle.ViewModel
+
+class FavoriteCharacterViewModel: ViewModel() {
+
 }

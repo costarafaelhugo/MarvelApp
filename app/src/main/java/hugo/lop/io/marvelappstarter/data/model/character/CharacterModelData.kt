@@ -1,3 +1,9 @@
 package hugo.lop.io.marvelappstarter.data.model.character
 
-data class CharacterModelData()
+import com.google.gson.annotations.SerializedName
+import java.io.Serializable
+
+data class CharacterModelData(
+    @SerializedName("results")
+    val results: List<CharacterModel>
+): Serializable
