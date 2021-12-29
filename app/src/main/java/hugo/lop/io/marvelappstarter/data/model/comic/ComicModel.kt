@@ -10,7 +10,7 @@ data class ComicModel(
     @SerializedName("title")
     val title: String,
     @SerializedName("description")
-    val descrption: String,
+    val description: String,
     @SerializedName("thumbnail")
     val thumbnailModel: ThumbnailModel
 ): Serializable
